@@ -1,0 +1,69 @@
+.content{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    list-style-type: none;
+    color: var(--betuszin);
+}
+
+.content i{
+    margin-top: 50px;
+    
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-item {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--elsodleges-szin);
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info input[type="submit"] {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .content{
+        width: 500px;
+    }
+    .user-item{
+        margin-left: 20px;
+    }
+    .user-info input[type="submit"] {
+        padding: 6px 10px;
+    }
+    .kijel{
+        margin-top: 540px !important;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .content{
+        width: 600px;
+    }
+    .user-item{
+        margin-left: 20px;
+    }
+    .user-info input[type="submit"] {
+        padding: 6px 10px;
+    }
+    .kijel{
+        margin-top: 430px !important;
+    }
+}

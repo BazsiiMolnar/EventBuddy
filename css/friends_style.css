@@ -1,0 +1,59 @@
+.friends-container {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+#friends{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.image-text {
+    text-align: center;
+    margin-left: 50px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.image-text a{
+    border: 2px solid var(--keresoszin);
+}
+
+#friends h2{
+    color: var(--betuszin);
+    text-align: center;
+}
+
+hr{
+    color: var(--betuszin);
+}
+
+#friends p{
+    font-size: 20px;
+    color: var(--betuszin);
+}
+
+@media screen and (max-width: 768px) {
+    #friends{
+        margin-left: 55px;
+    }
+    .kijel{
+        margin-top: 860px !important;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .image-text a{
+        width: 230px;
+        margin-left: 10px;
+    }
+}
+
+

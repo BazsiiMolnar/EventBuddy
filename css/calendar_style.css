@@ -1,0 +1,60 @@
+#appointments {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.content h2, hr{
+   text-align: center;
+   color: var(--betuszin);
+}
+
+#idopontjaim {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.appointment{
+    text-align: center;
+    margin-left: 50px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.appointment p {
+    margin: 5px 0;
+}
+
+.mini-date-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 10px;
+    float: right;
+}
+
+.appointment a{
+    border: 2px solid var(--keresoszin);
+}
+
+@media screen and (max-width: 768px) {
+    #appointments {
+        margin-left: 55px;
+    }
+    .kijel {
+        margin-top: 700px !important;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .appointment a {
+        width: 230px;
+        margin-left: 10px;
+    }
+
+    .kijel{
+        margin-top: 400px !important;
+    }
+
+}

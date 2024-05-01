@@ -1,0 +1,132 @@
+.pfpimg img{
+    margin-top: -100px;
+    margin-left: 42%;
+    width: 230px;
+    height: 230px;
+    min-width: 150px;
+    min-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--masodlagos-szin);
+    display: block;
+}
+
+.coverimg{
+    width: 1500px;
+    height: 180px;
+    background-color: var(--elsodleges-szin);
+    border-bottom: 8px solid var(--masodlagos-szin);
+    z-index:1;
+}
+
+.coverimg img{
+    width: 1245px;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 8px solid var(--masodlagos-szin);
+    z-index:1;
+}
+
+
+#coverimg{
+    background: red;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    color: var(--elsodleges-szin);
+    margin-left: 900px;
+    margin-top: -20px;
+}
+
+#coverimg input{
+    transform: scale(2);
+    opacity: 0;
+    position: absolute;
+}
+
+
+#imgform{
+    margin-top: -60px;
+    margin-left: 725px;
+    background: red;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    color: var(--elsodleges-szin);
+}
+
+#imgform input{
+    transform: scale(2);
+    opacity: 0;
+    position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    .pfpimg img {
+        width: 75px;
+        height: 75px;
+        margin-top: -80px;
+        margin-left: auto; 
+        margin-right: auto;
+        }
+    #coverimg {
+        margin-left: 450px;
+    }
+    #imgform {
+        margin-left: 320px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .pfpimg img {
+        width: 150px;
+        height: 150px;
+        margin-top: -80px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    #coverimg {
+        margin-left: 650px;
+    }
+    #imgform {
+        margin-left: 420px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .pfpimg img {
+        width: 200px;
+        height: 200px;
+        margin-top: -80px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    #coverimg {
+        margin-left: 800px;
+    }
+    #imgform {
+        margin-left: 560px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .pfpimg img {
+        width: 200px;
+        height: 200px;
+        margin-top: -80px;
+    }
+    #coverimg {
+        margin-left: 800px;
+    }
+    #imgform {
+        margin-left: 610px;
+    }
+}

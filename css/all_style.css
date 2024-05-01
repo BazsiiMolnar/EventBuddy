@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --elsodleges-szin: white;
+    --masodlagos-szin: lightgray;
+    --betuszin: black;
+    --keresoszin: hsl(252, 30%, 95%);
+    --hatter: url("../img/hatter.png");
+    --background-size: cover;
+}
+
+.sotetmod{
+    --elsodleges-szin: #252526;
+    --masodlagos-szin: gray;
+    --betuszin: white;
+    --keresoszin: rgb(169,169,169);
+    --hatter: url("../img/hatter2.jpg");
+}
+
+body{
+    background-image: var(--hatter);
+    background-size: cover;
+}
+
+.container{
+    height: auto;
+    background-color: var(--elsodleges-szin);
+    border-radius: 25px;
+    box-shadow: 0 0 30px black;
+    overflow: hidden;
+}
+
+ul{ list-style-type: none; } 
+li{text-decoration: none;}
+a:link {text-decoration: none}
+
+nav{
+    margin-top: -75px;
+    margin-left: -55px;
+    float: left;
+    width: 9%;
+    min-width: 115px;
+    height: 100%;
+    background: var(--masodlagos-szin);
+    overflow: hidden;
+    transition: width 0.2s linear;
+    z-index: 1000;
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transform: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img{
+    margin-left: 4px;
+    width: 47px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    margin-left: -1px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+a{
+    position: relative;
+    color: var(--betuszin);
+    font-size: 16px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    font-weight: 500;
+    background-color: var(--masodlagos-szin);
+    
+}
+
+.fas{
+    position: relative;
+    width: 26%;
+    height: 40px;
+    top: 14px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+a:hover{
+    background: var(--elsodleges-szin);
+}
+nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+.kijel{
+    margin-top: 435px;
+    margin-bottom: -16px;
+}
+
+header{
+    background: var(--masodlagos-szin);
+    height: 64px;
+    width: 2000px;
+    transition: all 0.5s ease;
+}
+
+.kereso{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.kereso input[type="text"]{
+    background-color: var(--keresoszin);
+    width: 55%;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    margin-top: 12px;
+    margin-left: 230px;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+}
+
+.kereso input::placeholder{
+    color: var(--betuszin);
+}
+
+#ertesites-results {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-left: 1105px;
+    margin-top: 5px;
+    width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    overflow-y: auto;
+    max-height: 130px;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    border-radius: 6px; 
+}
+
+#ertesites-results::-webkit-scrollbar {
+    width: 8px;
+}
+
+#ertesites-results::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 4px; 
+}
+
+#ertesites-results::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+.ertesitesbtn{
+    position: absolute;
+    left: 40%;
+    top: 108px;
+  }
+
+.bell-button{
+    margin-top: 8px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    box-sizing : content-box;
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    color: var(--betuszin);
+}
+
+.bell-button:hover{
+    background: var(--elsodleges-szin);
+    border-radius: 50%;
+}
+
+.details{
+    margin-top: 5px;
+  }
+
+.request-message{
+    margin-bottom: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.mini-image{
+    margin-left: 45px;
+    width: 35px; 
+    height: 35px; 
+    border-radius:50%;
+}
+
+.accept-btn,
+.reject-btn,
+.accept2-btn,
+.reject2-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+}
+  
+.reject-btn, .reject2-btn {
+    background-color: #f44336;
+    margin-left: 10px;
+}
+  
+.ertesites{
+    background-color: var(--keresoszin);
+}
+  
+.ertesites b{
+    color: var(--betuszin);
+}
+
+.noti{
+    width: 150px;
+}
+
+.username{
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: -43px;
+    z-index: 1000;
+    color: white;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 0;
+        width: 520px;
+    }
+    nav:hover {
+        width: 0%; 
+    }
+    .kereso input[type="text"] {
+        width: 70%; 
+        margin-left: 60px; 
+        margin-right: auto; 
+    }
+    .ertesitesbtn {
+        left: 475px;
+        top: 2px;
+    }
+    #ertesites-results {
+        margin-left: 350px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        margin-top: 2%;
+        width: 1100px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav:hover {
+        width: 0%; 
+    }
+    .kereso input[type="text"] {
+        width: 85%; 
+        margin-left: 120px; 
+        margin-right: auto; 
+    }
+    .ertesitesbtn {
+        left: 73%;
+        top: 20px;
+    }
+    #ertesites-results {
+        margin-left: 500px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        margin-top: 2%;
+        width: 1100px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav:hover {
+        width: 0%; 
+    }
+    .kereso input[type="text"] {
+        width: 85%; 
+        margin-left: 120px; 
+        margin-right: auto; 
+    }
+    .ertesitesbtn {
+        left: 76%;
+        top: 27px;
+    }
+    #ertesites-results {
+        margin-left: 700px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .container {
+        margin-top: 2%;
+        width: 1100px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kereso input[type="text"] {
+        width: 60%; 
+        margin-left: 230px; 
+        margin-right: auto; 
+    }
+    nav:hover {
+        width: 0%; 
+    }
+    .ertesitesbtn {
+        left: 77%;
+        top: 27px;
+    }
+    #ertesites-results {
+        margin-left: 850px;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px){
+    .container {
+        margin-top: 3%;
+        width: 1500px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kereso input[type="text"] {
+        width: 60%; 
+        margin-left: 230px; 
+        margin-right: auto; 
+    }
+    .ertesitesbtn {
+        left: 81%;
+        top: 45px;
+    }
+    #ertesites-results {
+        margin-left: 1075px;
+        margin-top: 0;
+    }
+    .username{
+        margin-right: 55px;
+    }
+}
+
+@media screen and (min-width: 1601px){
+    .container {
+        margin-top: 3%;
+        width: 1500px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ertesitesbtn {
+        left: 76%;
+        top: 60px;
+    }
+}
